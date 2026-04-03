@@ -1,0 +1,29 @@
+<h2>Users</h2>
+
+@if(users.length === 0 && !loading && !error) {
+<p>No users found.</p>
+} @else if (error) {
+<p>{{ error }}</p>
+} @else if (loading) {
+<p>Loading...</p>
+} @else {
+<table border="1">
+
+    <!-- Header -->
+    <tr>
+        @for (col of columns; track col) {
+        <th>{{ col }}</th>
+        }
+    </tr>
+
+    <!-- Rows -->
+    @for (user of users; track user) {
+    <tr>
+        @for (col of columns; track col) {
+        <td>{{ user[col] }}</td>
+        }
+    </tr>
+    }
+
+</table>
+}
