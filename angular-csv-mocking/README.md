@@ -93,9 +93,9 @@ this.api.deleteResource('users', 1);
 | Works with interceptor | ✅         |
 | Works with real API    | ✅         |
 
-##🧠 Architecture
+## 🧠 Architecture
 ```
-assets/mocks/
+publics/mocks/
    ├── users.csv
    ├── orders.csv
 
