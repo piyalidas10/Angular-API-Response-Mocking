@@ -6,7 +6,7 @@
 - Example: /api/users → users.csv
 
 ```
-assets/mocks/
+publics/mocks/
    users.csv     → /api/users
    orders.csv    → /api/orders
    products.csv  → /api/products
